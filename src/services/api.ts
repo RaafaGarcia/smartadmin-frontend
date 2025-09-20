@@ -2,8 +2,8 @@ import type { User, Project, DashboardData, AuthUser } from '../types';
 
 export class ApiService {
   // IMPORTANTE: Cambia esta URL por tu API de Render
-//   private static API_BASE = 'https://smartadmin-api.onrender.com/api';
-    private static API_BASE = 'http://localhost:8000/api';
+  private static API_BASE = 'https://smartadmin-api.onrender.com/api';
+    // private static API_BASE = 'http://localhost:8000/api';
   private static getToken(): string | null {
     return localStorage.getItem('access_token');
   }

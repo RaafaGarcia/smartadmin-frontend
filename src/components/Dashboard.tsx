@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { 
-  Users, 
-  FolderOpen, 
+import {
+  Users,
+  FolderOpen,
   TrendingUp,
   DollarSign,
   Activity
@@ -150,10 +150,10 @@ export const Dashboard: React.FC = () => {
               <XAxis dataKey="name" />
               <YAxis />
               <Tooltip />
-              <Line 
-                type="monotone" 
-                dataKey="value" 
-                stroke="#3B82F6" 
+              <Line
+                type="monotone"
+                dataKey="value"
+                stroke="#3B82F6"
                 strokeWidth={3}
                 dot={{ fill: '#3B82F6', strokeWidth: 2, r: 6 }}
               />
@@ -175,7 +175,7 @@ export const Dashboard: React.FC = () => {
                 fill="#8884d8"
                 dataKey="value"
               >
-                {pieData.map((entry, index) => (
+                {pieData.map((_, index) => (
                   <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                 ))}
               </Pie>
